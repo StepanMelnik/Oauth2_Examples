@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: oauth2-examples
+  profiles:
+    active:
+      default
+  devtools:
+    add-properties: true
+# Debug
+#debug: true
+# Allows to trace all calls
+#trace: true

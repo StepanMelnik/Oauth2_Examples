@@ -1,0 +1,23 @@
+# https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+server:
+   port: 8080
+   compression:
+     enabled: true
+   error:
+     path: /error
+   http2:
+     enabled: true
+   tomcat:
+      max-threads: 20
+      basedir: ./target/tomcat
+      accesslog:
+        enabled: true
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: [Create client id as described in README.md]
+            client-secret: [Create client secret as described in README.md]
+        
