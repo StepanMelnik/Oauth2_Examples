@@ -8,6 +8,9 @@ The following solutions implemented in the project:
   * **Social GitHub client** authorizes via GitHub provider;
   * **JSON Web Token** creates web token based on <a href="https://jwt.io/introduction/">JSON Web Token</a> library
 
+Also check <a href="https://github.com/StepanMelnik/Oauth2AuthorizationResourceServer">Oauth2 Authorization-Resource Server</a> project to get an idea how Authorization-Resource servers work with OAuth2 framework in spring.
+
+
 ### Social GitHub client
 
 <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/SocialGithubOAuth2Application.java">SocialGithubOAuth2Application</a> is simple application to authorize a request via OAuth2 GitHub client.
