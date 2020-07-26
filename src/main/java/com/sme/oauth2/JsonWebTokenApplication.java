@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Spring boot application to authorize a request via GiHub OAuth2 client.
+ * Spring boot application to authorize a request based on io.jsonwebtoken library.
  */
 @SpringBootApplication
-@ComponentScan(basePackages = "com.sme.oauth2.github")
-public class SocialGithubOAuth2Application
+@ComponentScan(basePackages = "com.sme.oauth2.jsonwebtoken")
+public class JsonWebTokenApplication
 {
     /**
      * The main entry point to start application.
@@ -18,6 +18,6 @@ public class SocialGithubOAuth2Application
      */
     public static void main(String[] args)
     {
-        SpringApplication.run(SocialGithubOAuth2Application.class, "--spring.profiles.active=social");
+        SpringApplication.run(JsonWebTokenApplication.class, "--spring.profiles.active=jsonwebtoken");
     }
 }

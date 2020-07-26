@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: jsonwebtoken-examples
+  profiles:
+    active:
+      jsonwebtoken
+  devtools:
+    add-properties: true
+# Debug
+#debug: true
+# Allows to trace all calls
+#trace: true

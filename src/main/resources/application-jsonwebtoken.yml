@@ -1,0 +1,26 @@
+# https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+server:
+   port: 8080
+   compression:
+     enabled: true
+   error:
+     path: /error
+   http2:
+     enabled: true
+   tomcat:
+      max-threads: 20
+      basedir: ./target/tomcat
+      accesslog:
+        enabled: true
+jsonwebtoken:
+   users:
+      - username : admin
+        password : secret
+      - username : user
+        password : user_secret
+      - username : lowuser
+        password : lowuser_secret
+   secretKey: This is a secret key
+   expirationInMs: 3600_000 
+           
+        

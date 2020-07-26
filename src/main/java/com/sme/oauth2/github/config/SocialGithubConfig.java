@@ -18,9 +18,11 @@ public class SocialGithubConfig extends WebSecurityConfigurerAdapter
     {
         SimpleUrlAuthenticationFailureHandler handler = new SimpleUrlAuthenticationFailureHandler("/");
 
+        // CSOFF
         // @formatter:off
         http.antMatcher("/**")
-            .authorizeRequests(a -> {
+            .authorizeRequests(a ->
+            {
                 try
                 {
                     a.antMatchers("/", "/logout").permitAll()
@@ -48,8 +50,8 @@ public class SocialGithubConfig extends WebSecurityConfigurerAdapter
                 .failureHandler((request, response, exception) -> {
                     request.getSession().setAttribute("error.message", exception.getMessage());
                     handler.onAuthenticationFailure(request, response, exception);
-                })
-             );
+                }));
         // @formatter:on
+        // CSON
     }
 }

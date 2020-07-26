@@ -3,7 +3,7 @@ spring:
     name: oauth2-examples
   profiles:
     active:
-      default
+      social
   devtools:
     add-properties: true
 # Debug
