@@ -4,6 +4,10 @@
 ## Description
 The project describes how Spring Oauth2 Clients work in details.
 
+The following solutions implemented in the project:
+  * **Social GitHub client** authorizes via GitHub provider;
+  * **JSON Web Token** creates web token based on <a href="https://jwt.io/introduction/">JSON Web Token</a> library
+
 ### Social GitHub client
 
 <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/SocialGithubOAuth2Application.java">SocialGithubOAuth2Application</a> is simple application to authorize a request via OAuth2 GitHub client.
