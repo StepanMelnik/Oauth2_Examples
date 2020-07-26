@@ -6,7 +6,7 @@ The project describes how Spring Oauth2 Clients work in details.
 
 ### Social GitHub client
 
-<a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/SocialGithubOauth2Application.java">SocialGithubOauth2Application</a> is simple application to authorize a request via OAuth2 GitHub client.
+<a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/SocialGithubOAuth2Application.java">SocialGithubOAuth2Application</a> is simple application to authorize a request via OAuth2 GitHub client.
 
 #### Configure New OAuth Application in GitHub
 Do the following before starting **SocialGithubOauth2Application**:
@@ -26,7 +26,7 @@ Test **SocialGithubOauth2Application** by hand:
  
 #### How it works
 
-<a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/github/config/SocialGithubConfig.java#51">SocialGithubConfig</a> configures authentication support using an OAuth 2.0.
+<a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/github/config/SocialGithubConfig.java#L49">SocialGithubConfig</a> configures authentication support using an OAuth 2.0.
 
 When we press "Login with GitHub" link on <a href="http://localhost:8080/">localhost:8080</a>, Spring Security performs the following steps:
  * Spring Security calls OAuth2AuthorizationRequestRedirectFilter. The filter resolves GitHub provider with client-id and client-secret properties in <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/resources/application-social.yml">application-social.yml</a>.
@@ -53,7 +53,7 @@ But the solution is not recommended to be used in services:
 
 #### Test by hand
 
-Check <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/jsonwebtoken/config/JsonWebTokenConfig">JsonWebTokenConfig</a> to check what pages need authentication.
+Check <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/java/com/sme/oauth2/jsonwebtoken/config/JsonWebTokenConfig.java">JsonWebTokenConfig</a> to check what pages need authentication.
 
 Also check **jsonwebtoken** properties in <a href="https://github.com/StepanMelnik/Oauth2_Examples/blob/master/src/main/resources/application-jsonwebtoken.yml">application-jsonwebtoken.yml</a>:
   * **users** is list of in-memory users
